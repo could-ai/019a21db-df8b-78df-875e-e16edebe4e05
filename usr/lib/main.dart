@@ -6,6 +6,8 @@ import 'screens/home_screen.dart';
 import 'screens/tasks_screen.dart';
 import 'screens/wallet_screen.dart';
 import 'screens/referral_screen.dart';
+import 'screens/daily_bonus_screen.dart';
+import 'screens/mining_simulator_screen.dart';
 import 'providers/app_provider.dart';
 
 void main() async {
@@ -37,6 +39,8 @@ class MyApp extends StatelessWidget {
           '/tasks': (context) => const TasksScreen(),
           '/wallet': (context) => const WalletScreen(),
           '/referral': (context) => const ReferralScreen(),
+          '/daily_bonus': (context) => const DailyBonusScreen(),
+          '/mining': (context) => const MiningSimulatorScreen(),
         },
       ),
     );

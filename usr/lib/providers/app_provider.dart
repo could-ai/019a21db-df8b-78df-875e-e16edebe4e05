@@ -31,7 +31,7 @@ class Transaction {
   Map<String, dynamic> toJson() => {
     'description': description,
     'amount': amount,
-    'date': date.toISOString(),
+    'date': date.toIso8601String(),
   };
 
   factory Transaction.fromJson(Map<String, dynamic> json) => Transaction(

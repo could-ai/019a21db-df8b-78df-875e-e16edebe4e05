@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/app_provider.dart';
 
+import 'daily_bonus_screen.dart';
+import 'mining_simulator_screen.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -57,8 +60,8 @@ class HomeScreen extends StatelessWidget {
               children: [
                 _buildMenuItem(context, Icons.task, 'Complete Tasks', '/tasks'),
                 _buildMenuItem(context, Icons.people, 'Refer Friends', '/referral'),
-                _buildMenuItem(context, Icons.watch_later, 'Daily Bonus', null),
-                _buildMenuItem(context, Icons.mining, 'Mining Simulator', null),
+                _buildMenuItem(context, Icons.watch_later, 'Daily Bonus', '/daily_bonus'),
+                _buildMenuItem(context, Icons.memory, 'Mining Simulator', '/mining'),
               ],
             ),
           ],
